@@ -1,9 +1,14 @@
-
+# Homeshick
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
+source "$HOME/.homesick/repos/homeshick/completions/homeshick-completion.bash"
+
 # Export definitions
 export NVM_DIR="/Users/msnyon/.nvm"
 export EDITOR="emacs"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# Adding to PATH
+export PATH=$PATH:~/bin
 
 # SSH Aliases
 alias dbprodtunnel='ssh -l minerops ec2-54-175-180-197.compute-1.amazonaws.com -N -C -L 27017:10.0.3.163:27017 -vvv &'
@@ -16,13 +21,8 @@ alias l='less'
 alias lock='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend'
 alias sleep='/Users/mnyon/work/bin/osx/sleep.sh'
 alias pdf='open -a Preview.app'
-alias rls="ls -ct /tmp/status* | awk '{ print $0}' | xargs less"
-alias vjar='jar -tf '
-alias uei='upload_error_image'
-alias uv='upload_video'
-alias spk='cat ~/.ssh/id_ecdsa.pub | pbcopy'
 alias rspk='cat ~/.ssh/id_rsa.pub | pbcopy'
-alias dspk='cat ~/.ssh/id_dsa.pub | pbcopy'
+alias change="emacs ~/.bashrc; source ~/.bashrc"
 
 # Git aliases
 alias glg='git log | grep '
