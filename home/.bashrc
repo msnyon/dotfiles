@@ -24,6 +24,19 @@ alias pdf='open -a Preview.app'
 alias rspk='cat ~/.ssh/id_rsa.pub | pbcopy'
 alias change="emacs ~/.bashrc; source ~/.bashrc"
 
+# Working Directory Aliases
+alias apps='cd /Applications'
+alias docs='cd ~/Documents'
+alias downs='cd ~/Downloads'
+alias desk='cd ~/Desktop'
+alias mdowns='cd ~/Library/Mail\ Downloads'
+alias ws='cd ~/code'
+alias wsm='cd ~/code/miner'
+
+# Git prompt & completion
+source /Users/msnyon/git-completion.bash
+source /Users/msnyon/git-prompt.sh
+
 # Git aliases
 alias glg='git log | grep '
 alias ga='git add'
