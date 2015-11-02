@@ -33,6 +33,10 @@ alias mdowns='cd ~/Library/Mail\ Downloads'
 alias ws='cd ~/code'
 alias wsm='cd ~/code/miner'
 
+# NPM aliases
+nt='npm test'
+nst='npm start'
+
 # Git prompt & completion
 source /Users/msnyon/git-completion.bash
 source /Users/msnyon/git-prompt.sh
